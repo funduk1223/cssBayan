@@ -17,7 +17,7 @@ body{
 }
 
 .content-block{
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,13 +25,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: aquamarine;
+    
 }
 
 .header-container {
     font-size: 2rem;
     color: yellowgreen;
     text-align: left;
+    margin: 1rem;
 }
 
 .list-container {
@@ -47,28 +48,113 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    align-self:stretch;
-    color: blueviolet;
+    align-self: stretch;
+    color: rgb(76, 58, 93);
     background-color: wheat;
+   
+  
 }
 
-.joke-item1{
+.meme-blok{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: wheat;
+    color: rgba(76, 58, 93, 0.574);
+    border-style: none none solid none ;
+    
+}
+
+.image-section {
+    align-content: center;
+}
+
+.meme-image{
+    display: flex;
+    width: 0%;
+    transition: 0.4s all ease-in-out;
 }
 
 .icon-picture {
     align-self: flex-end;
-    width: 2rem;
-    margin-right: 1rem;
+    width: 0rem;
+    margin: 0.5rem;
+    transition: 0.4s all ease-out;
 }
 
 .list-title {
-    margin-left: 1rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    transition: all 0.3s ease;
 }
 
-/*
+.content-block:hover .list-title {
+    color: white;
+}
+
+.content-block:hover .icon-picture{
+    width: 2rem;
+}
+
+
+
+#joke-item1:checked + label .meme-image, 
+#joke-item1:hover + label .meme-image {
+    background-color: lime;
+    width: 100%;
+}
+#joke-item1:checked + label  .list-title, 
+#joke-item1:hover + label .list-title {
+    color: #000;
+}
+
+
+#joke-item2:checked + label .meme-image, 
+#joke-item2:hover + label .meme-image {
+    background-color: lime;
+    width: 100%;
+}
+
+#joke-item2:checked + label  .list-title, 
+#joke-item2:hover + label .list-title {
+    color: #000;
+}
+
+
+#joke-item3:checked + label .meme-image,
+#joke-item3:hover + label .meme-image{
+    background-color: lime;
+    width: 100%;
+}
+#joke-item3:checked + label  .list-title, 
+#joke-item3:hover + label .list-title {
+    color: #000;
+}
+
+
+#joke-item4:checked + label .meme-image,
+#joke-item4:hover + label .meme-image{
+    background-color: lime;
+    width: 100%;
+}
+#joke-item4:checked + label  .list-title, 
+#joke-item4:hover + label .list-title {
+    color: #000;
+}
+
+
+#joke-item5:checked + label .meme-image,
+#joke-item5:hover + label .meme-image{
+    background-color: lime;
+    width: 100%;
+}
+
+#joke-item5:checked + label  .list-title, 
+#joke-item5:hover + label .list-title {
+    color: #000;
+}
+
+
 input {
     display: none;
 }
-*/
+
