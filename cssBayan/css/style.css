@@ -42,6 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
 
 .list-item {
@@ -102,11 +103,17 @@ body{
     width: 2rem;
 }
 
+.list-container:hover  {
+    cursor: pointer;
+}
 
+#joke-item1:checked + label, 
+#joke-item1:hover + label {
+    cursor: pointer;
+}
 
 #joke-item1:checked + label .meme-image, 
 #joke-item1:hover + label .meme-image {
-    
     width: 50%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -120,9 +127,14 @@ body{
     rotate: 0deg;
 }
 
+
+#joke-item2:checked + label, 
+#joke-item2:hover + label {
+    cursor: pointer;
+}
+
 #joke-item2:checked + label .meme-image, 
-#joke-item2:hover + label .meme-image {
-   
+#joke-item2:hover + label .meme-image {   
     width: 50%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -136,6 +148,11 @@ body{
 #joke-item2:checked + label  .icon-picture, 
 #joke-item2:hover + label .icon-picture {
     rotate: 0deg;
+}
+
+#joke-item3:checked + label, 
+#joke-item3:hover + label {
+    cursor: pointer;
 }
 
 #joke-item3:checked + label .meme-image,
@@ -154,6 +171,12 @@ body{
     rotate: 0deg;
 }
 
+
+#joke-item4:checked + label, 
+#joke-item4:hover + label {
+    cursor: pointer;
+}
+
 #joke-item4:checked + label .meme-image,
 #joke-item4:hover + label .meme-image{
     
@@ -169,6 +192,11 @@ body{
 #joke-item4:checked + label  .icon-picture, 
 #joke-item4:hover + label .icon-picture {
     rotate: 0deg;
+}
+
+#joke-item5:checked + label, 
+#joke-item5:hover + label {
+    cursor: pointer;
 }
 
 #joke-item5:checked + label .meme-image,
